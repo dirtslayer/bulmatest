@@ -1,0 +1,24 @@
+{
+  "name": "bulmatest",
+  "version": "1.0.0",
+  "description": "testing bulma css ",
+  "keywords": [
+    "bulma"
+  ],
+  "author": "darrell",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.4",
+    "bulma": "^0.9.3",
+    "eslint": "^8.12.0",
+    "http-server": "^14.1.0",
+    "node-sass": "^7.0.1",
+    "postcss-cli": "^9.1.0"
+  },
+  "scripts": {
+    "start": "http-server -o -c-1 -p 8081",
+    "scss": "node-sass public/scss/ -o public/css --include-path node_modules/bulma",
+    "postscss": "postcss --use autoprefixer --output public/css/index.css public/css/index.css"
+  }
+}
+
