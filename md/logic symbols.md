@@ -1,4 +1,10 @@
-﻿| **Symbol** | **Unicode**                    | **Logic Name**                  | **Read as**                            |
+﻿# Logic Symbols
+
+Extracted from Wikipedia
+https://en.wikipedia.org/wiki/List_of_logic_symbols
+
+
+| **Symbol** | **Unicode**                    | **Logic Name**                  | **Read as**                            |
 |------------|--------------------------------|---------------------------------|----------------------------------------|
 | ⇒→⊃       | 21D2 2192 2283                 | material implication            | implies; if ... then ☺                |
 | ⇔≡⟷       | 21D4 2261 27F7                 | material equivalence            | if and only if; iff; means the same as |
