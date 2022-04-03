@@ -18,22 +18,9 @@ h1 {
 td {
   padding-right: 1em;
 }
-/*
 
-if you want unstyled html to be styled without adding bulma classes,
-you can extend the bulma base class into the default class
-
-the alternative is commented out in ./md/showdown.html, which is
-use js to apply the table class (not as cool)
-
-*/
 table {
   @extend .table;
-}
-
-.bulma-fa-mixin {
-  @include fa(1rem, 2rem);
-  background-color: rgb(16, 85, 33); // For demo purposes
 }
 
 .bulma-hamburger-mixin {

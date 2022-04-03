@@ -35,13 +35,9 @@ https://en.wikipedia.org/wiki/List_of_logic_symbols
 | ⊨          | 22A8                           | double turnstile                | models                                 |
 
 </div>
-
-	</div>
-	</section>
-
-		<script type="text/javascript">
-
-
+</div>
+</section>
+<script type="text/javascript">
 
 document.addEventListener('readystatechange', event => { 
 
@@ -52,7 +48,7 @@ if (event.target.readyState === "interactive") {   //does same as:  ..addEventLi
 
 // When window loaded ( external resources are loaded too- `css`,`src`, etc...) 
 if (event.target.readyState === "complete") {
-    //alert("hi 2");
+    // unused but left here in case you want to have some html inside md
     function unescapeHTML( text ) {
 				    return text.replace( /&amp;/g, "&" )
 				               .replace( /&lt;/g, "<" )
@@ -72,7 +68,9 @@ if (event.target.readyState === "complete") {
                     ele.innerHTML = out;
 
                 });
-/*				elems = document.querySelectorAll('table');
+/*				
+				// this would add a class table to all tables, alternative
+				elems = document.querySelectorAll('table');
                 elems.forEach( ele => {
                     ele.classList.add("table");
                 });
