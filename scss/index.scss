@@ -17,7 +17,18 @@ $primary-invert: $pink-invert;
 h1 {
   font-size: 2em;
 }
+/*
 
+if you want unstyled html to be styled without adding bulma classes,
+you can include the bulma css mixin into the base class
+
+the alternative is commented out in ./md/showdown.html, which is
+use js to apply the table class (not as cool)
+
+*/
+table {
+  @include table();
+}
 
 .bulma-fa-mixin {
   @include fa(1rem, 2rem);
