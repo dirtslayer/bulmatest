@@ -1,0 +1,34 @@
+@import "bulma";
+
+
+
+$blue: #06bcef;
+// Add pink and its invert
+$pink: #e7eb1a;
+$pink-invert: #fff;
+// Update the sans-serif font family
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $pink;
+$primary-invert: $pink-invert;
+
+h1 {
+  font-size: 1.5em;
+}
+
+
+.bulma-fa-mixin {
+  @include fa(1rem, 2rem);
+  background-color: rgb(16, 85, 33); // For demo purposes
+}
+
+.bulma-hamburger-mixin {
+  @include hamburger(2.5rem);
+}
+.bulma-control-mixin {
+    @include control;
+    background: brown;
+    color: $pink;
+  }
