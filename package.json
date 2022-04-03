@@ -17,8 +17,8 @@
   },
   "scripts": {
     "start": "http-server -o -c-1 -p 8081",
-    "scss": "node-sass public/scss/ -o public/css --include-path node_modules/bulma",
-    "postscss": "postcss --use autoprefixer --output public/css/index.css public/css/index.css"
+    "scss": "node-sass scss/ -o css --include-path node_modules/bulma",
+    "postscss": "postcss --use autoprefixer --output css/index.css css/index.css"
   }
 }
 
