@@ -37,7 +37,9 @@ https://dirtslayer.github.io/bulmatest/md/showdown.html
 So this is one way, but, i'd rather not have my page additionally load the showdown library when we can do this work as a build step.
 
 Enter phtml. We can run showdown on an md file, and use a phtml include to insert it into a page.
-
+```html
+            <include src="./logic symbols.html" />
+```
 ```json
 "scripts": {
     "start": "http-server -o -c-1 -p 8081",
