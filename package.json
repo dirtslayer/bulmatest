@@ -13,12 +13,15 @@
     "eslint": "^8.12.0",
     "http-server": "^14.1.0",
     "node-sass": "^7.0.1",
-    "postcss-cli": "^9.1.0"
+    "phtml": "^4.1.0",
+    "postcss-cli": "^9.1.0",
+    "showdown": "^2.0.3"
   },
   "scripts": {
     "start": "http-server -o -c-1 -p 8081",
+    "md2html": "showdown makehtml -i md/logic\\ symbols.md -c tables github > html/logic\\ symbols.html",
+    "phtml2html": "phtml html/bulma\\ logic.phtml output.html -p @phtml/include",
     "scss": "node-sass scss/ -o css --include-path node_modules/bulma",
     "postscss": "postcss --use autoprefixer --output css/index.css css/index.css"
   }
 }
-

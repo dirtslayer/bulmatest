@@ -1,4 +1,5 @@
-﻿# Logic Symbols
+﻿
+# Logic Symbols
 
 Extracted from Wikipedia
 https://en.wikipedia.org/wiki/List_of_logic_symbols
@@ -21,10 +22,10 @@ https://en.wikipedia.org/wiki/List_of_logic_symbols
 | ⊢          | 22A2                           | turnstile                       | proves                                 |
 | ⊨          | 22A8                           | double turnstile                | models                                 |
 
-
+```
 C ⇔ person joins chat
 L ⇔ person looks around
 P ⇔ person makes post
 ∃P | ¬( C ⇒ P ) ∧ ( (L ∧ P) ⇒ C )
-
-There exist a person who joins chat such that its not the case joining chat implies making a post, however either looking around or making a post implies they've joined chat
+```
+There exist a person such that its not the case joining chat implies making a post, however either looking around or making a post implies they've joined chat
