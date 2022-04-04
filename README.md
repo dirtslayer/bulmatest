@@ -37,11 +37,12 @@ https://dirtslayer.github.io/bulmatest/md/showdown.html
 So this is one way, but, i'd rather not have my page additionally load the showdown library when we can do this work as a build step.
 
 Enter phtml. We can run showdown on an md file, and use a phtml include to insert it into a page.
+
 ```json
 "scripts": {
     "start": "http-server -o -c-1 -p 8081",
     "md2html": "showdown makehtml -i md/logic\\ symbols.md -c tables github > html/logic\\ symbols.html",
-    "phtml2html": "phtml html/bulma\\ logic.phtml output.html -p @phtml/include",
+    "phtml2html": "phtml html/bulma\\ logic.phtml html/output.html -p @phtml/include",
     "scss": "node-sass scss/ -o css --include-path node_modules/bulma",
     "postscss": "postcss --use autoprefixer --output css/index.css css/index.css"
   }

@@ -20,7 +20,7 @@
   "scripts": {
     "start": "http-server -o -c-1 -p 8081",
     "md2html": "showdown makehtml -i md/logic\\ symbols.md -c tables github > html/logic\\ symbols.html",
-    "phtml2html": "phtml html/bulma\\ logic.phtml output.html -p @phtml/include",
+    "phtml2html": "phtml html/bulma\\ logic.phtml html/output.html -p @phtml/include",
     "scss": "node-sass scss/ -o css --include-path node_modules/bulma",
     "postscss": "postcss --use autoprefixer --output css/index.css css/index.css"
   }
