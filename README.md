@@ -1,4 +1,4 @@
-# Sample project using bulma.io and showdown.js together
+# Sample project using bulma.io, showdown.js and phtml/include
 
 Bulma.io is a scss framework for making web pages look nice. It adds things like spacing and rounded borders - the look is similar to bootstrap.
 
@@ -47,7 +47,12 @@ Enter phtml. We can run showdown on an md file, and use a phtml include to inser
     "postscss": "postcss --use autoprefixer --output css/index.css css/index.css"
   }
 ```
+and the output is here:
 
+https://dirtslayer.github.io/bulmatest/html/output.html
+
+thats it for now!
+😊
 
 
 
